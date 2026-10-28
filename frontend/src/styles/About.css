@@ -1,0 +1,77 @@
+.about {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 0;
+}
+.about-hero {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 36px;
+}
+.about-hero h1 {
+  color: var(--primary);
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+.about-hero p {
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 36px;
+}
+.about-card {
+  background: var(--card);
+  padding: 26px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.25s;
+}
+.about-card:hover {
+  transform: translateY(-5px);
+}
+.about-card svg {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.about-card h3 {
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+.about-card p {
+  color: var(--muted);
+}
+
+.about-note {
+  background: var(--primary);
+  color: #e2e8f0;
+  padding: 34px;
+  border-radius: var(--radius);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.about-note h2 {
+  color: #fff;
+}
+.about-note p {
+  max-width: 640px;
+  line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+  .about-hero h1 {
+    font-size: 1.7rem;
+  }
+}
